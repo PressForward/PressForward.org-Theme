@@ -1,21 +1,32 @@
-	</div><!-- Row End -->
+<!-- Row End -->
 </div><!-- Container End -->
 
-<div class="full-width footer-widget">
-	<div class="row">
-		<?php dynamic_sidebar("Footer"); ?>
-	</div>
-</div>
 
 <footer class="full-width" role="contentinfo">
 	<div class="row">
-		<div class="large-12 columns">
-			<?php wp_nav_menu(array('theme_location' => 'utility', 'container' => false, 'menu_class' => 'inline-list')); ?>
+		<div class="large-4 columns">
+			<?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('footer1')) : else : ?>  
+		        <p><strong>Widget Ready</strong></p>  
+		        <p>This left_column is widget ready! Add one in the admin panel.</p>  
+		    <?php endif; ?> 
+		</div>
+		<div class="large-4 columns">
+			<?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('footer2')) : else : ?>  
+		        <p><strong>Widget Ready</strong></p>  
+		        <p>This left_column is widget ready! Add one in the admin panel.</p>  
+		    <?php endif; ?> 
+		</div>
+		<div class="large-4 columns">
+			<?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('footer3')) : else : ?>  
+		        <p><strong>Widget Ready</strong></p>  
+		        <p>This left_column is widget ready! Add one in the admin panel.</p>  
+		    <?php endif; ?> 
 		</div>
 	</div>
-	<div class="row love-reverie">
+	<div class="row license">
 		<div class="large-12 columns">
-			<p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. <?php _e('Made with Love in','reverie'); ?> <a href="http://themefortress.com/reverie/" rel="nofollow" title="Reverie Framework">Reverie</a>.</p>
+			<p>This work is licensed under a Creative Commons Attribution 4.0 International License.<br>
+			Powered by WordPress, Reverie, and Foundation.</p>
 		</div>
 	</div>
 </footer>

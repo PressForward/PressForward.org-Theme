@@ -1,3 +1,29 @@
+.featured_area {
+  margin-top: 15px;
+  padding: 15px 25px 15px 25px;
+}
+
+#menu-social {
+  list-style-type: none;
+}
+.social-icon {
+  float: left;
+  padding: 0 6px 0 6px;
+}
+
+.arpw-ul {
+  margin-left: 0px !important;
+}
+.widget_recent_entries ul{
+  margin-left: 0;
+}
+footer {
+  margin-top: 15px;
+}
+
+.name li{
+  list-style-type: none;
+}
 /* Welcome and glad you are using Reverie.
  * This is the main stylesheet loaded by default.
  * Edit the file and have fun.
@@ -256,6 +282,11 @@ body > header.contain-to-grid {
 #content {
   background-color: #fff;
   border: 1px solid #ddd;
+}
+#content-areas {
+  border: 1px solid #ddd;
+  background-color: #fff;
+  margin-top: 10px;
 }
 
 .index-card {
@@ -525,3 +556,7 @@ footer.full-width .love-reverie {
     padding-top: 2rem;
   }
 }
+
+
+
+

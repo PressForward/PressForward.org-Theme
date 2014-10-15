@@ -1,3 +1,10 @@
+li.body {
+  margin-left: 25px;
+}
+.license p {
+  margin-top: 1.5rem;
+}
+
 meta.foundation-version {
   font-family: "/5.2.3/";
 }
@@ -5226,6 +5233,20 @@ blockquote p {
   margin-bottom: 0 !important;
   margin-left: 0;
 }
+ul {
+  list-style-position: inside;
+  margin-left: 25px;
+}
+.content.active ul {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+.content.active p {
+  margin-bottom: 5px;
+}
+.panelcontent {
+  margin: none;
+}
 .tabs:before, .tabs:after {
   content: " ";
   display: table;
@@ -5233,6 +5254,7 @@ blockquote p {
 .tabs:after {
   clear: both;
 }
+
 .tabs dd, .tabs .tab-title {
   position: relative;
   margin-bottom: 0 !important;
@@ -5243,7 +5265,7 @@ blockquote p {
   display: block;
   background: #efefef;
   color: #222222;
-  padding: 1rem 2rem;
+  padding: 1.3rem 2rem;
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-size: 1rem;
 }
@@ -5267,10 +5289,13 @@ blockquote p {
   float: none;
   display: block;
   top: auto;
+  margin-right: 25px;
 }
 
 .tabs-content {
   margin-bottom: 1.5rem;
+  margin-top: 0;
+  margin-left: 0;
   width: 100%;
 }
 .tabs-content:before, .tabs-content:after {
@@ -5283,22 +5308,35 @@ blockquote p {
 .tabs-content > .content {
   display: none;
   float: left;
-  padding: 0.9375rem 0;
+  padding: 0 0;
   width: 100%;
 }
-.tabs-content > .content.active {
+.tabs-content > .content.active  {
   display: block;
   float: none;
+  margin-left: 25px;
+  /*padding-left: 75px;*/
+}
+.content li {
+  margin-left: 25px !important;
+  /*padding-left: 75px;*/
 }
 .tabs-content > .content.contained {
-  padding: 0.9375rem;
+  padding: 0;
 }
 .tabs-content.vertical {
   display: block;
 }
 .tabs-content.vertical > .content {
-  padding: 0 0.9375rem;
+  padding: 0;
+  margin: 0;
 }
+
+
+
+
+
+
 
 @media only screen and (min-width: 40.063em) {
   .tabs.vertical {

@@ -109,4 +109,78 @@ if ( ! function_exists( 'reverie_entry_meta' ) ) {
         echo '<time class="updated" datetime="'. get_the_time('c') .'" pubdate>'. get_the_time('F jS, Y') .'</time>';
     }
 };
+//added 10/10/2014 to register sidebars.
+if (function_exists('register_sidebar')) {  
+  
+    register_sidebar(array(  
+        'name' => 'Left Column',  
+        'id'   => 'left_column',  
+        'description'   => 'Widget area for home page left column',  
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',  
+        'after_widget'  => '</div>',  
+        'before_title'  => '<h4>',  
+        'after_title'   => '</h4>'  
+    ));  
+    register_sidebar(array(  
+        'name' => 'Center Column',  
+        'id'   => 'center_column',  
+        'description'   => 'Widget area for home page center column',  
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',  
+        'after_widget'  => '</div>',  
+        'before_title'  => '<h4>',  
+        'after_title'   => '</h4>'  
+    ));  
+    register_sidebar(array(  
+        'name' => 'Right Column',  
+        'id'   => 'right_column',  
+        'description'   => 'Widget area for home page right column',  
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',  
+        'after_widget'  => '</div>',  
+        'before_title'  => '<h4>',  
+        'after_title'   => '</h4>'  
+    ));  
+      register_sidebar(array(  
+        'name' => 'Footer1',  
+        'id'   => 'footer1',  
+        'description'   => 'Widget area for home page footer',  
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',  
+        'after_widget'  => '</div>',  
+        'before_title'  => '<h4>',  
+        'after_title'   => '</h4>'  
+    )); 
+     register_sidebar(array(  
+        'name' => 'Footer2',  
+        'id'   => 'footer2',  
+        'description'   => 'Widget area for home page footer',  
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',  
+        'after_widget'  => '</div>',  
+        'before_title'  => '<h4>',  
+        'after_title'   => '</h4>'  
+    )); 
+      register_sidebar(array(  
+        'name' => 'Footer3',  
+        'id'   => 'footer3',  
+        'description'   => 'Widget area for home page footer',  
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',  
+        'after_widget'  => '</div>',  
+        'before_title'  => '<h4>',  
+        'after_title'   => '</h4>'  
+    )); 
+}  
+add_filter( 'storm_social_icons_networks', 'storm_social_icons_networks');
+function storm_social_icons_networks( $networks ) {
+
+    $extra_icons = array (
+        '/feed' => array(                  // Enable this icon for any URL containing this text
+            'name' => 'RSS',               // Default menu item label
+            'class' => 'rss',              // Custom class
+            'icon' => 'icon-rss',          // FontAwesome class
+            'icon-sign' => 'icon-rss-sign' // May not be available. Check FontAwesome.
+        ),
+    );
+
+    $extra_icons = array_merge( $networks, $extra_icons );
+    return $extra_icons;
+
+}
 ?>

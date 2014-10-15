@@ -18,3 +18,7 @@ License URI:        http://www.opensource.org/licenses/mit-license.php
   scss/style.scss.
 
 -------------------------------------------------- */
+
+.license {
+  p { margin-top: 15px;}
+}

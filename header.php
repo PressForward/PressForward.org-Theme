@@ -38,14 +38,15 @@
 </head>
 
 <body <?php body_class('antialiased'); ?>>
-
+	 <div class="name">
+	 			
+	        	<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img height="75" width="400" src="http://chnmdev.gmu.edu/fellows/regan/PressFwd/wp-content/uploads/2014/10/PFLogo_transparent.png"></a></h1>
+	        </div>
 <header class="contain-to-grid">
 	<!-- Starting the Top-Bar -->
 	<nav class="top-bar" data-topbar>
 	    <ul class="title-area">
-	        <li class="name">
-	        	<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-	        </li>
+	       
 			<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
 			<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
 	    </ul>
