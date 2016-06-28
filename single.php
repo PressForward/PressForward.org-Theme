@@ -2,19 +2,19 @@
 
 <!-- Row for main content area -->
 	<div class="small-12 large-8 columns" id="content" role="main">
-	
+
 	<?php /* Start loop */ ?>
 	<?php while (have_posts()) : the_post(); ?>
-		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
+		<article <?php post_class() ?> id="post-<?php the_ID(); ?>" role="article" itemscope itemtype="http://schema.org/BlogPosting">
 			<header>
-				<h1 class="entry-title"><?php the_title(); ?></h1>
+				<h1 class="entry-title" itemprop="headline"><?php the_title(); ?></h1>
 
 				<?php reverie_entry_meta(); ?>
 				<?php if (has_post_thumbnail()) {
 					the_post_thumbnail();
 				} ?>
 			</header>
-			<div class="entry-content">
+			<div class="entry-content" itemprop="articleBody">
 				<?php the_content(); ?>
 			</div>
 			<footer>
@@ -39,5 +39,5 @@
 
 	</div>
 	<?php get_sidebar(); ?>
-		
+
 <?php get_footer(); ?>
