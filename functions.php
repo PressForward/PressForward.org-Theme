@@ -91,6 +91,16 @@ foreach ($sidebars as $sidebar) {
         'after_title' => '</h4>'
     ));
 }
+$sidebars = array('BBSidebar');
+foreach ($sidebars as $sidebar) {
+    register_sidebar(array('name'=> $sidebar,
+        'id' => 'BBSidebar',
+        'before_widget' => '<article id="%1$s" class="panel widget %2$s">',
+        'after_widget' => '</article>',
+        'before_title' => '<h4>',
+        'after_title' => '</h4>'
+    ));
+}
 $sidebars = array('Footer');
 foreach ($sidebars as $sidebar) {
     register_sidebar(array('name'=> $sidebar,
@@ -183,4 +193,6 @@ function storm_social_icons_networks( $networks ) {
     return $extra_icons;
 
 }
+
+
 ?>

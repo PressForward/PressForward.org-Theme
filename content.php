@@ -9,10 +9,11 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('index-card'); ?>>
 	<header>
-		<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+		<h2><?php the_title(); ?></h2>
 		<?php reverie_entry_meta(); ?>
 	</header>
 	<div class="entry-content">
 		<figure><a href="<?php the_permalink(); ?>"><?php if ( has_post_thumbnail() ) {the_post_thumbnail('large'); } ?></a></figure> <?php the_excerpt(); ?>
+	<a style="float:right;" href="<?php the_permalink(); ?>"><p><strong>Read More</strong></p></a>
 	</div>
 </article>

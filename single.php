@@ -8,7 +8,11 @@
 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			<header>
 				<h1 class="entry-title"><?php the_title(); ?></h1>
+
 				<?php reverie_entry_meta(); ?>
+				<?php if (has_post_thumbnail()) {
+					the_post_thumbnail();
+				} ?>
 			</header>
 			<div class="entry-content">
 				<?php the_content(); ?>

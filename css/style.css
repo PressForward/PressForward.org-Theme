@@ -1,22 +1,80 @@
-.featured_area {
-  margin-top: 15px;
-  padding: 15px 25px 15px 25px;
+.author-meta > .fn {
+	margin-left: 25px;
 }
-
-#menu-social {
-  list-style-type: none;
+.bbp-reply-post-date {
+	padding-left: 10px;
 }
-.social-icon {
+.attachment-post-thumbnail {
+padding: 25px 0 15px 0;
+}
+#downloadbutton {
+  margin: 15px 10px 0px 0px;
+}
+#dwldbutton {
+  font-weight: bold;
   float: left;
-  padding: 0 6px 0 6px;
+  border: #efefef solid 3px;
+  padding: 23px 50px 23px 50px;
+  margin-left: 0px;
+  font-size: 1.08rem;
+  letter-spacing: 0.5px;
 }
 
-.arpw-ul {
-  margin-left: 0px !important;
+.bbp-form label {
+  float: left;
+  font-family: 'Open Sans';
+  padding: 0 0 15px 0;
 }
-.widget_recent_entries ul{
-  margin-left: 0;
+
+.bbp-form input {
+  font-family: 'Open Sans';
 }
+.bbp-form p{
+  font-family: 'Open Sans';
+
+}
+#user_login {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.bbp-username {
+  margin-top:0px;
+}
+.bbp-template.notice p{
+  font-family: 'Open Sans';
+  margin: 0;
+  padding: 0;
+  line-height: 90%;
+}
+.bbp-login-form {
+  margin:0;
+  padding:0;
+}
+.bbp-form {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.partnerimg img {
+  margin-top: .2rem;
+}
+#content {
+  padding: 3.2rem 3.2rem 1rem 3.2rem !important;
+}
+.left {
+  padding: 3.2rem 1rem 1rem 3.2rem;
+}
+.middle {
+  padding: 3.2rem 1rem 1rem 1rem;
+}
+.right {
+  padding: 3.2rem 3.2rem 1rem 1rem;
+}
+
+
+
+
+
 footer {
   margin-top: 15px;
 }
@@ -24,6 +82,10 @@ footer {
 .name li{
   list-style-type: none;
 }
+
+/*****
+
+
 /* Welcome and glad you are using Reverie.
  * This is the main stylesheet loaded by default.
  * Edit the file and have fun.

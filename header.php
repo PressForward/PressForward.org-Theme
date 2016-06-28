@@ -14,7 +14,7 @@
 	<meta name="viewport" content="width=device-width" />
 
 	<!-- Favicon and Feed -->
-	<link rel="shortcut icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/favicon.png">
+	<link rel="shortcut icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> Feed" href="<?php echo home_url(); ?>/feed/">
 
 	<!--  iPhone Web App Home Screen Icon -->
@@ -35,18 +35,36 @@
 
 <?php wp_head(); ?>
 
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//chnmdev.gmu.edu/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 102]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//chnmdev.gmu.edu/piwik/piwik.php?idsite=102" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+
 </head>
 
 <body <?php body_class('antialiased'); ?>>
-	 <div class="name">
+	 <div class="logo">
 	 			
-	        	<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img height="75" width="400" src="http://chnmdev.gmu.edu/fellows/regan/PressFwd/wp-content/uploads/2014/10/PFLogo_transparent.png"></a></h1>
-	        </div>
+	  <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="http://chnmdev.gmu.edu/fellows/regan/PressFwd/wp-content/uploads/2014/10/PFLogo_transparent.png"></a></h1>
+	  </div>
 <header class="contain-to-grid">
+	
 	<!-- Starting the Top-Bar -->
 	<nav class="top-bar" data-topbar>
 	    <ul class="title-area">
-	       
+	       <li class="name"></li>
 			<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
 			<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
 	    </ul>
@@ -65,7 +83,11 @@
 	            ) ),
 	        ) );
 	    ?>
-	    <?php
+	    
+	  
+	    
+		
+			    <?php
 	    	// Uncomment the following to enable the right menu (additional menu)
 			
 	    	/*
